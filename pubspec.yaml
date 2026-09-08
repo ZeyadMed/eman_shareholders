@@ -1,0 +1,82 @@
+name: eman_shareholders
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # لازمة للـ date picker العربي (GlobalMaterialLocalizations).
+  flutter_localizations:
+    sdk: flutter
+
+  # ── State management ────────────────────────────────
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+  get_it: ^8.0.2
+
+  # ── Networking ─────────────────────────────────────
+  dio: ^5.7.0
+  pretty_dio_logger: ^1.4.0
+  connectivity_plus: ^6.1.4
+  internet_connection_checker_plus: ^2.7.1
+
+  # ── Storage ────────────────────────────────────────
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.3.3
+
+  # ── UI / navigation ────────────────────────────────
+  go_router: ^16.1.0
+  flutter_screenutil: ^5.9.3
+  gap: ^3.0.1
+  pinput: ^6.0.2
+  lottie: ^3.3.1
+
+  # ── i18n / utils ───────────────────────────────────
+  easy_localization: ^3.0.7
+  intl: ^0.20.2
+  logger: ^2.5.0
+  uuid: ^4.5.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+
+flutter:
+
+  uses-material-design: true
+
+  fonts:
+    - family: Diodrum
+      fonts:
+        - asset: assets/fonts/DiodrumArabic-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/DiodrumArabic-Medium-1.ttf
+          weight: 500
+        - asset: assets/fonts/DiodrumArabic-Semibold-1.ttf
+          weight: 600
+        - asset: assets/fonts/DiodrumArabic-Bold-1.ttf
+          weight: 700
+
+  # ملاحظة: assets/fonts/ مش مضافة هنا عن قصد — الخطوط بتتحمّل من قسم fonts
+  # فوق، ولو ضفناها هنا كمان بتتنسخ في الـ bundle مرتين.
+  assets:
+    - assets/svg/
+    - assets/images/
+    - assets/translations/
+
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/core/style/
+  filename: assets.dart
