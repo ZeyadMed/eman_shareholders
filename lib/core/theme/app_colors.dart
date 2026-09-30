@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // ─── Main Colors ─────────────────────────────────
-  static const Color mainAppColor = Color(0xff1B5FA8); // تقسيط برو primary
+  static const Color mainAppColor = Color(0xff0F5A3C); // أخضر عون primary
   static const Color secondaryColor = Color(0xffF59F00); // Amber secondary
   static const Color accentGreen = Color(0xff3B6D11);
   static const Color accentTeal = Color(0xff0F6E56);
@@ -10,7 +10,7 @@ class AppColors {
   static const Color accentPurple = Color(0xff534AB7);
 
   // ─── Light variants ───────────────────────────────
-  static const Color mainLight = Color(0xffE6F1FB);
+  static const Color mainLight = Color(0xffE6F2EC);
   static const Color secondaryLight = Color(0xffFFF3CD);
   static const Color greenLight = Color(0xffEAF3DE);
   static const Color tealLight = Color(0xffE1F5EE);
@@ -45,26 +45,25 @@ class AppColors {
   static const Color whatsapp = Color(0xff25D366);
   static const Color whatsappLight = Color(0xffE8F9F1);
 
-  // ─── Brand (sampled from app_logo) ────────────────
-  static const Color brandBlue = Color(0xff1246E0); // أزرق اللوجو
-  static const Color brandBlueDeep = Color(0xff0A2A8C);
-  static const Color brandGreen = Color(0xff4CB122); // أخضر اللوجو
+  // ─── Brand (sampled from aoun_logo) ───────────────
+  static const Color brandDeep = Color(0xff083828); // أخضر اللوجو الغامق
+  static const Color brandGold = Color(0xffCC9428); // دهبي اللوجو
 
   // ─── Gradients ────────────────────────────────────
   static const LinearGradient mainGradient = LinearGradient(
     begin: Alignment.topRight,
     end: Alignment.bottomLeft,
-    colors: [Color(0xff1B5FA8), Color(0xff0C447C)],
+    colors: [Color(0xff16704C), Color(0xff083828)],
   );
 
-  /// خلفية السبلاش — أزرق اللوجو بيروح لأخضره
+  /// خلفية السبلاش — أخضر اللوجو بيروح لدهبي فاتح
   static const LinearGradient splashGradient = LinearGradient(
     begin: Alignment.topRight,
     end: Alignment.bottomLeft,
     colors: [
-      Color.fromARGB(255, 28, 83, 246),
-      Color.fromARGB(255, 107, 132, 207),
-      Color.fromARGB(255, 173, 196, 219),
+      Color(0xff083828),
+      Color(0xff2E7A58),
+      Color(0xffEBDDB4),
     ],
     stops: [0.0, 0.55, 1.0],
   );

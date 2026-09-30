@@ -60,7 +60,7 @@ class StatementSectionTitle extends StatelessWidget {
           title,
           style: TextStyles.boldStyle(
             16,
-            color: AppColors.brandBlueDeep,
+            color: AppColors.brandDeep,
             weight: FontWeight.w800,
           ),
         ),

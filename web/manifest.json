@@ -1,11 +1,11 @@
 {
-    "name": "eman_shareholders",
-    "short_name": "eman_shareholders",
+    "name": "عون",
+    "short_name": "عون",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FFFFFF",
+    "theme_color": "#0B4A33",
+    "description": "عون — كشف حساب المساهمين",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

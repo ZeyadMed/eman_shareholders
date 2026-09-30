@@ -75,7 +75,7 @@ class _StatementFilterSheetState extends State<_StatementFilterSheet> {
                       'فلترة الحركات',
                       style: TextStyles.boldStyle(
                         18,
-                        color: AppColors.brandBlueDeep,
+                        color: AppColors.brandDeep,
                         weight: FontWeight.w800,
                       ),
                     ),

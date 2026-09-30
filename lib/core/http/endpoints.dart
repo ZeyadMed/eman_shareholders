@@ -1,7 +1,7 @@
 part of 'http.dart';
 
 abstract interface class Endpoints {
-  static const String baseUrl = 'https://amantheone.runasp.net';
+  static const String baseUrl = 'https://taqseet.premiumasp.net';
   static const String forgetPassword = "/api/Auth/client-forget-password";
   static const String resetPassword = "/api/Auth/client-reset-password";
   static const String login = "/api/Auth/client-login";

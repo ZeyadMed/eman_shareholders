@@ -29,7 +29,7 @@ class StatementFilterBar extends StatelessWidget {
                 'الحركات',
                 style: TextStyles.boldStyle(
                   16,
-                  color: AppColors.brandBlueDeep,
+                  color: AppColors.brandDeep,
                   weight: FontWeight.w800,
                 ),
               ),

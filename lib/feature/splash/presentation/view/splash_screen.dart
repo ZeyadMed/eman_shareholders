@@ -91,7 +91,7 @@ class _SplashScreenState extends State<SplashScreen>
                   position: _iconSlideAnimation,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
-                    child: Image.asset(Assets.assetsImagesAppLogo),
+                    child: Image.asset(Assets.assetsImagesAounLogo, width: 240),
                   ),
                 ),
               ),

@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-
+  
   /// Assets for assetsFontsDiodrumArabicBold1
   /// assets/fonts/DiodrumArabic-Bold-1.ttf
   static const String assetsFontsDiodrumArabicBold1 = "assets/fonts/DiodrumArabic-Bold-1.ttf";
@@ -18,9 +18,9 @@ class Assets {
   /// assets/fonts/DiodrumArabic-Semibold-1.ttf
   static const String assetsFontsDiodrumArabicSemibold1 = "assets/fonts/DiodrumArabic-Semibold-1.ttf";
 
-  /// Assets for assetsImagesAppLogo
-  /// assets/images/app_logo.png
-  static const String assetsImagesAppLogo = "assets/images/app_logo.png";
+  /// Assets for assetsImagesAounLogo
+  /// assets/images/aoun_logo.png
+  static const String assetsImagesAounLogo = "assets/images/aoun_logo.png";
 
   /// Assets for assetsSvgNoInternet
   /// assets/svg/no_internet.json
@@ -34,3 +34,4 @@ class Assets {
   /// assets/translations/en.json
   static const String assetsTranslationsEn = "assets/translations/en.json";
 }
+

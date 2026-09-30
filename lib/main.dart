@@ -77,7 +77,7 @@ class MyApp extends StatelessWidget {
                 valueListenable: ThemeModeController.notifier,
                 builder: (context, themeMode, _) {
                   return MaterialApp.router(
-                    title: "Ewan Booking",
+                    title: "عون",
                     debugShowCheckedModeBanner: false,
                     scaffoldMessengerKey: scaffoldMessengerKey,
                     localizationsDelegates: [

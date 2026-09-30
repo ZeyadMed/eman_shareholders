@@ -171,7 +171,7 @@ class _VerifyOtpViewState extends State<_VerifyOtpView> {
                     textAlign: TextAlign.center,
                     style: TextStyles.boldStyle(
                       26,
-                      color: AppColors.brandBlueDeep,
+                      color: AppColors.brandDeep,
                       weight: FontWeight.w800,
                     ),
                   ),
@@ -190,7 +190,7 @@ class _VerifyOtpViewState extends State<_VerifyOtpView> {
                       textAlign: TextAlign.center,
                       style: TextStyles.boldStyle(
                         16,
-                        color: AppColors.brandBlueDeep,
+                        color: AppColors.brandDeep,
                         weight: FontWeight.w800,
                       ),
                     ),

@@ -100,7 +100,7 @@ class _OtpTextFieldState extends State<OtpTextField> {
                 decoration: BoxDecoration(
                   color: fillColor,
                   borderRadius: BorderRadius.circular(14.0),
-                  border: Border.all(color: AppColors.brandGreen, width: 1.6),
+                  border: Border.all(color: AppColors.brandGold, width: 1.6),
                 ),
               ),
               submittedPinTheme: defaultPinTheme.copyWith(

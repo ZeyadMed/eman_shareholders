@@ -1,5 +1,5 @@
 name: eman_shareholders
-description: "A new Flutter project."
+description: "عون — تطبيق المساهمين (كشف الحساب)."
 publish_to: 'none' 
 
 version: 1.0.0+3
@@ -75,6 +75,21 @@ flutter:
     - assets/svg/
     - assets/images/
     - assets/translations/
+
+# أيقونة التطبيق (عون) — بعد أي تغيير: dart run flutter_launcher_icons
+# assets/icon/ مش في قسم assets فوق عن قصد — دي مصادر للأيقونة بس ومش محتاجينها في الـ bundle.
+flutter_launcher_icons:
+  image_path: assets/icon/aoun_icon.png
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/icon/aoun_icon_foreground.png
+  web:
+    generate: true
+    image_path: assets/icon/aoun_icon.png
+    background_color: "#FFFFFF"
+    theme_color: "#0B4A33"
 
 flutter_assets:
   assets_path: assets/

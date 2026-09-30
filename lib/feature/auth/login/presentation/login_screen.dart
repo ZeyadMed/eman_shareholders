@@ -164,8 +164,8 @@ class _LoginViewState extends State<_LoginView> {
               // ─── اللوجو ─────────────────────────────────
               Center(
                 child: Image.asset(
-                  Assets.assetsImagesAppLogo,
-                  width: 260.w,
+                  Assets.assetsImagesAounLogo,
+                  width: 170.w,
                   fit: BoxFit.contain,
                 ),
               ),
@@ -176,7 +176,7 @@ class _LoginViewState extends State<_LoginView> {
                 textAlign: TextAlign.center,
                 style: TextStyles.boldStyle(
                   26,
-                  color: AppColors.brandBlueDeep,
+                  color: AppColors.brandDeep,
                   weight: FontWeight.w800,
                 ),
               ),
