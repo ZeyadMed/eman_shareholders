@@ -124,7 +124,7 @@ class _EmptyEntries extends StatelessWidget {
   }
 }
 
-/// صف حركة واحدة — الأيقونة والنوع والتاريخ والمبلغ.
+/// صف حركة واحدة — الأيقونة والنوع والتاريخ والمبلغ والرصيد بعدها والملاحظات.
 class StatementEntryTile extends StatelessWidget {
   final StatementEntryModel entry;
 
@@ -164,16 +164,23 @@ class StatementEntryTile extends StatelessWidget {
                 ),
                 Gap(4.h),
                 Text(
-                  StatementFormat.entrySubtitle(entry),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
+                  StatementFormat.date(entry.date),
                   style: TextStyles.lightStyle(12, color: AppColors.textHint),
                 ),
-                // رقم السند بيرجع فاضي في بعض الحركات فما نعرضهوش.
-                if (entry.voucherNumber.isNotEmpty) ...[
+                Gap(3.h),
+                Text(
+                  'الرصيد بعد الحركة: '
+                  '${StatementFormat.currency(entry.capitalBalanceAfter)}',
+                  style: TextStyles.lightStyle(
+                    11,
+                    color: AppColors.textSecondary,
+                  ),
+                ),
+                // الملاحظات غالبًا بترجع فاضية فما نعرضهاش غير لو فيها نص.
+                if (entry.notes.isNotEmpty) ...[
                   Gap(3.h),
                   Text(
-                    'سند: ${entry.voucherNumber}',
+                    'ملاحظات: ${entry.notes}',
                     style: TextStyles.lightStyle(11, color: AppColors.textHint),
                   ),
                 ],

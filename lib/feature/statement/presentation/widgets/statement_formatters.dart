@@ -1,7 +1,5 @@
 import 'package:intl/intl.dart';
 
-import '../../data/models/statement_model.dart';
-
 /// تنسيق الأرقام والتواريخ المعروضة في كشف الحساب.
 abstract interface class StatementFormat {
   /// أسماء الشهور بالعربي — بنستخدمها بدل `DateFormat` العربي عشان تفضل
@@ -53,14 +51,5 @@ abstract interface class StatementFormat {
     if (count == 1) return 'حركة واحدة';
     if (count == 2) return 'حركتان';
     return '$count حركة';
-  }
-
-  /// وصف الحركة تحت اسمها — التاريخ + الخزينة.
-  static String entrySubtitle(StatementEntryModel entry) {
-    final parts = [
-      date(entry.date),
-      if (entry.treasuryName.isNotEmpty) entry.treasuryName,
-    ];
-    return parts.join(' · ');
   }
 }
