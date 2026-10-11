@@ -44,10 +44,7 @@ class StatementGreeting extends StatelessWidget {
             shape: BoxShape.circle,
             gradient: AppColors.mainGradient,
           ),
-          child: Text(
-            _initial,
-            style: TextStyles.whiteText(18),
-          ),
+          child: Text(_initial, style: TextStyles.whiteText(18)),
         ),
       ],
     );
@@ -117,7 +114,7 @@ class StatementHeaderCard extends StatelessWidget {
           Row(
             children: [
               _HeaderStat(
-                label: 'نسبتك من الشركة',
+                label: 'نسبة الشركة',
                 value: StatementFormat.percentage(companyPercentage),
               ),
               Container(
